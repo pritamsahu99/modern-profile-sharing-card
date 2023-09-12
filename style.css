@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.container1{
+background-image: linear-gradient(160deg, #0094e9a0 0%, #80D0C7 100%);
+
+}
+.circle1{
+    box-shadow: 0 0 50px #2a70aec7;
+    background: linear-gradient(-25deg, #744aa77d, #5d467684);
+    animation: circle1Animate 12s infinite;
+}
+@keyframes circle1Animate {
+    50% {
+      left: 22%;
+      top: 4%;
+      scale: 1.11;
+    }
+}
+.circle2{
+    box-shadow: 0 0 50px #744aa782;
+    background: linear-gradient(-25deg, #895bba9a, #4a9ea7bc);
+    animation: circle2Animate 15s infinite;
+}
+@keyframes circle2Animate {
+    50% {
+      bottom: 8%;
+      right: 22%;
+      scale: 1.11;
+
+    }
+}
+.btn{
+    transition: all 0.3s;
+}
+.icon{
+    transition: all 0.3s;
+    padding: 17px;
+}
+.modal{
+    scale: 0;
+}
+.active{
+    scale: 1;
+}
+.overlay {
+    transition: 0.5s ease-in-out;
+}
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+

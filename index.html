@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incr & Decr & Profile Card</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet"href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" /> -->
+</head>
+
+<body>
+    <div class="wrapper overflow-hidden overflow-y-scroll h-screen w-screen">
+        <div class="container1 relative h-screen w-screen flex justify-center items-center ">
+            <div class="circles">
+                <div class="circle1 absolute rounded-full shadow-[#2a70ae8a] w-[10em] h-[10em] top-[5%] left-1/4"></div>
+                <div class="circle2 absolute rounded-full bottom-[5%] right-[18%] w-[12em] h-[12em] "></div>    
+            </div>
+            <div class="cardWrapper flex py-6 px-14 justify-evenly flex-col items-center backdrop-blur-[10px]
+                absolute border-2 border-[#ffffff30] bg-[#ffffff3b] h-[450px] min-w-[350px] text-[#ffffff] rounded-2xl">
+                <div class="contents">
+                    <img width="170px" height="170px" src="./image/pic.jpg" class="border-2 rounded-full border-[#ffffff49] " alt="">
+                    <h2 class="text-center text-[2rem] font-semibold"><img class="inline pr-1 relative top-[3.5px]" width="35px" src="./image/instagram.png" alt="">pritam_sahu</h2>
+                    <a href="https://www.instagram.com/pritam.pyare.1999/"><h3 class="text-center text-[18px] hover:underline font-bold opacity-85 text-[#31040488]"><span class="text-[1.7rem] relative top-[3.5px]">@</span>pritam.pyare.1999</h3></a>
+                    <div class="buttons flex gap-3">
+                        <button onclick="openModal()" class="flex btn text-center justify-center hover:bg-[#ffffff36] items-center gap-2  
+                            rounded-[4px] py-[3px] px-5 border-2 border-[#ffffff71] text-[#131313] active:scale-[.9]">
+                            <img height="15px" width="15px" src="./image/share-solid.svg" alt="">
+                           <div>Share Here</div>
+                        </button>
+                        <button class="flex hover:bg-[#ffffff36] btn py-[3px] px-8 justify-center items-center text-center
+                            rounded-[4px] border-2 border-[#ffffff71] text-[#131313] active:scale-[.9]">
+                            Follow Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal z-10 w-[500px] border-2 border-[#ffffff6d] ease-in-out duration-[.5s] rounded-[20px] bg-[#00000088] backdrop-blur-[15px] text-white py-5 px-6">
+                <div class="modalHeading flex mb-[25px] items-center pb-3 border-b-[1.5px] border-[#ffffff88] justify-between">
+                    <h1 class=" font-bold text-[30px]">Share My Profile</h1>
+                    <img onclick="closeModal()" class="cursor-pointer rounded-full active:bg-slate-600" height="25px" width="25px" src="./image/cross-circle.svg" alt="">
+                </div>
+                <div>
+                    <h3 class=" text-[20px] font-bold">Share here via</h3>
+                    <div class="iconsContainer flex justify-between mt-5 flex-wrap items-center">
+                        <a href="#" class="icon border-[1.5px] border-[#1771e6] rounded-full hover:bg-[#508dde]" id="facebook">
+                          <img height="40px" width="40px" src="./image/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="icon border-[1.5px] border-[#1c99e6] rounded-full hover:bg-[#1c99e6]" id="twitter">
+                          <img height="40px" width="40px" src="./image/twitter (2).png" alt="">
+                        </a>
+                        <a href="#" class="icon border-[1.5px] border-[#cb2755] rounded-full hover:bg-[#cb2755]" id="instagram">
+                          <img height="40px" width="40px" src="./image/instagram (2).png" alt="">
+                        </a>
+                        <a href="#" class="icon border-[1.5px] border-[#2fe664] rounded-full hover:bg-[#2fe664]" id="whatsapp">
+                          <img height="40px" width="40px" src="./image/whatsapp (2).png" alt="">
+                        </a>
+                        <a href="#" class="icon border-[1.5px] border-[#508dde] rounded-full hover:bg-[#508dde]" id="linkedIn">
+                          <img height="40px" width="40px" src="./image/linkedIn (2).png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay absolute bg-[#1a181863] opacity-0 h-screen w-screen backdrop-blur-[1.5px] pointer-events-none" onclick="closeModal()"></div>
+        </div>
+        <div class="container2 h-screen w-screen flex gap-y-4 flex-col justify-center items-center bg-slate-500">
+            <h3 class=" text-lg font-semibold text-[#fff]">
+                Increment And Decrement
+            </h3>
+            <div class="flex gap-x-12 border-2 py-3 px-5 rounded-md bg-white border-blue-200">
+                <button onclick="decrement()" class="border-r-2 pr-6 border-[#bfbfbf]">
+                    <img class=" rounded-full active:scale-[.9] active:bg-slate-400" height="20px" width="20px" src="./image/minus-circle.svg" alt="">
+                </button>
+                <div id="countNum" class="font-medium text-[22px]">
+                    0
+                </div>
+                <button onclick="increment()" class="border-l-2 pl-6 border-[#bfbfbf]">
+                    <img class="rounded-full active:scale-[.9] active:bg-slate-400" height="20px" width="20px" src="./image/add.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <script src="./script.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/6942583f36.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
