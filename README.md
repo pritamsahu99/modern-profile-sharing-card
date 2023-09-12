@@ -16,7 +16,8 @@
 
 ###
 
-<h3 align="left">#parallexWebsite-practice</h3>
+<h4 align="left">#modern-profile-sharing-card
+</h4>
 <h6 align="left">🛠 Language and tools used<br><br># HTML <br># CSS <br># Tailwind CSS <br># JS</h6>
 
 ###
