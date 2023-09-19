@@ -1,9 +1,3 @@
-<div align="center">
-  <img height="300" src="https://www.bing.com/th/id/OGC.0274207612d515f49012c87803a9e631?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f2514208%2fscreenshots%2f9457622%2fweb_developer.gif&ehk=veqYgmD8af74WfDt9fVqmJ3xlglSnvKPXLACcqwhA%2bY%3d"  />
-</div>
-
-###
-
 <h1 align="left">hey there 👋...<br>here Pritam Sahu<br>- Aspiring to be a JAVA EXPERT & Web Developer</h1>
 
 ###
@@ -15,8 +9,13 @@
 <p align="left">- 🔭 I’m a student at present<br>- 👨🏻‍🎓 Pursuing BCA Degree<br>- 📚 I'm currently continuous learning JAVA PROGRAMMING, MERN FULL-STACK WEB-DEV<br>- ⚡ In my free time I Practice my learnings</p>
 
 ###
+<div align="center">
+  <img height="300" src="https://modern-profile-sharing-card.netlify.app"  />
+</div>
 
-<h4 align="left">#modern-profile-sharing-card
+###
+
+<h4 align="center">#modern-profile-sharing-card
 </h4>
 <h6 align="left">🛠 Language and tools used<br><br># HTML <br># CSS <br># Tailwind CSS <br># JS</h6>
 
