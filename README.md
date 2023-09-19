@@ -10,7 +10,7 @@
 
 ###
 <div align="center">
-  <img height="300" src="https://modern-profile-sharing-card.netlify.app"  />
+  <img height="300" src="https://modern-profile-sharing-card.netlify.app/"  />
 </div>
 
 ###
