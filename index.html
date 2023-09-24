@@ -6,9 +6,7 @@
     <title>Incr & Decr & Profile Card</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./index.css" />
-    <!-- <link rel="stylesheet"href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" /> -->
 </head>
-
 <body>
     <div class="wrapper overflow-hidden overflow-y-scroll h-screen w-screen">
         <div class="container1 relative h-screen w-screen flex justify-center items-center ">
@@ -80,8 +78,39 @@
             </div>
         </div>
     </div>
+<script>
+        const countNum = document.getElementById('countNum');
+ 
+const decrement = () => {
+  let value = parseInt(countNum.innerText);
+  value--;
+  countNum.innerText = value;
+}
+
+const increment = () => {
+  let value = parseInt(countNum.innerText);
+  value++;
+  countNum.innerText = value;
+}
+
+
+// For Profile Share Card
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+
+// Modal open function
+const openModal = () => {
+  modal.classList.add("active");
+  overlay.classList.add("overlayactive");
+}
+
+// Modal close function
+const closeModal = () => {
+  modal.classList.remove("active");
+  overlay.classList.remove("overlayactive");
+}
+    </script>
     <!---------------------------------------------------------------------------------------------------------------------------------------->
     <script src="./index.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/6942583f36.js" crossorigin="anonymous"></script> -->
 </body>
 </html>
