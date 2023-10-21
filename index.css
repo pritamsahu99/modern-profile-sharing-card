@@ -48,8 +48,8 @@ background-image: linear-gradient(160deg, #0094e9a0 0%, #80D0C7 100%);
     scale: 1;
 }
 .overlay {
-    transition: 0.5s ease-in-out;
-}
+    transition: 0.2s ease;
+} 
 .overlayactive {
     opacity: 1;
     pointer-events: initial;
