@@ -10,7 +10,7 @@
 
 ###
 <div align="center">
-<img src="https://onedrive.live.com/embed?resid=6916E26BD8ADAA98%2138735&authkey=!AGEnKDsb1jRDoow" width="98" height="120"/>
+<img src="https://onedrive.live.com/embed?resid=6916E26BD8ADAA98%2138735&authkey=!AGEnKDsb1jRDoow&width=660" width="660" height="auto"/>
 </div>
 
 ###
